@@ -18,7 +18,7 @@ const Header = () => {
               Galería
             </a>
             <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-200">
-              Menu
+              Menú
             </a>
             <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-200">
               Contacto
