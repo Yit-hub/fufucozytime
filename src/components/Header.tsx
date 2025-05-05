@@ -9,9 +9,9 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center z-10">
           <img
-            src="../src/assets/logo.jpg"
+            src="../src/assets/logo1.jpg"
             alt="Logo"
-            className="w-16 h-16 mr-4"
+            className="w-50 h-25 mr-4"
           />
         </div>
 
