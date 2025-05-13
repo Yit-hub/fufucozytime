@@ -1,21 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, ReactElement } from 'react';
 
-const Carousel = ({ images, slideInterval }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+interface CarouselProps {
+  images: string[];
+  slideInterval: number;
+}
 
-  const goToPreviousSlide = () => {
+const Carousel = ({ images, slideInterval }: CarouselProps): ReactElement => {
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+
+  const goToPreviousSlide = (): void => {
     setCurrentIndex((prevIndex) =>
       (prevIndex - 1 + images.length) % images.length
     );
   };
 
-  const goToNextSlide = () => {
+  const goToNextSlide = (): void => {
     setCurrentIndex((prevIndex) =>
       (prevIndex + 1) % images.length
     );
   };
 
-  const goToSlide = (index) => {
+  const goToSlide = (index: number): void => {
     setCurrentIndex(index);
   };
 
