@@ -2,6 +2,7 @@
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Carousel from './components/Carousel'
+import ColorSection from './components/ColorSection'
 
 const App = () => {
   const images = [
@@ -14,6 +15,8 @@ const App = () => {
     <div>
       <Header />
       <Carousel images={images} slideInterval={3000} />
+      <br />
+      <ColorSection />
       <Footer />
 
     </div>
