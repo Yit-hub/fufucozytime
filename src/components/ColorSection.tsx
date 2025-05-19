@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const sections = [
-  { id: 1, color: "bg-red-800", content: "Imagen 1" },
-  { id: 2, color: "bg-red-600", content: "Imagen 2" },
-  { id: 3, color: "bg-red-900", content: "Imagen 3" },
-  { id: 4, color: "bg-red-700", content: "Imagen 4" },
+  { id: 1, color: "bg-red-300", image: "../src/assets/Fresa.png" },
+  { id: 2, color: "bg-yellow-500", image: "Imagen 2" },
+  { id: 3, color: "bg-green-500", image: "Imagen 3" },
+  { id: 4, color: "bg-yellow-200", image: "Imagen 4" },
 ];
 
 export default function InteractiveSection() {
@@ -12,7 +12,7 @@ export default function InteractiveSection() {
 
   return (
     <div className="flex flex-col h-screen">
-       <br />
+      <br />
       {/* Título */}
       <h1 className="text-4xl font-bold text-center py-6 text-black bg-white">
         Prueba nuestros productos más refrescantes
@@ -26,22 +26,23 @@ export default function InteractiveSection() {
             <button
               key={section.id}
               onClick={() => setActive(index)}
-              className={`flex-1 transition-all duration-300 ${
-                section.color
-              } hover:opacity-80 ${active === index ? "ring-4 ring-white" : ""}`}
+              className={`flex-1 transition-all duration-300 ${section.color
+                } hover:opacity-80 ${active === index ? "ring-4 ring-white" : ""}`}
             />
           ))}
         </div>
 
         {/* Right side (background/image display) */}
         <div
-          className={`flex-1 transition-all duration-500 flex items-center justify-center ${
-            sections[active].color
-          }`}
+          className={`flex-1 transition-all duration-500 flex items-center justify-center ${sections[active].color}`}
         >
-          {/* Contenido dinámico */}
-          <div className="w-64 h-64 bg-white opacity-20 rotate-45"></div>
+          <img
+            src={sections[active].image}
+            alt={`Producto ${sections[active].id}`}
+            className="max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-lg"
+          />
         </div>
+
       </div>
     </div>
   );
