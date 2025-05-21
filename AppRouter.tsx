@@ -4,11 +4,7 @@ import  { Home }  from './src/Pages/Home';
 import  { Galeria }  from './src/Pages/Galeria';
 
 
-interface Props {
-    children: ReactNode
-}
-
-export const AppRouter = ({children}: Props) => {
+export const AppRouter = () => {
     return(
         <BrowserRouter>
             <Routes>
@@ -18,7 +14,6 @@ export const AppRouter = ({children}: Props) => {
                 <Route path="*" element = { <Navigate to = {"/404"}/> } />
                 <Route path="/404" element = {<h1>Página no encontrada</h1>} />
             </Routes>
-            {children}
         </BrowserRouter>
     )
 }

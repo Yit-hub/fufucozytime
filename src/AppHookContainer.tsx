@@ -1,11 +1,11 @@
 import App from "./App";
 import { AppRouter } from '../AppRouter'
 
-function AppHookContainer(){
+function AppHookContainer() {
     return (
-        <AppRouter>
-            <App />
-        </AppRouter>
+        <App>
+            <AppRouter />
+        </App>
     )
 }
 
