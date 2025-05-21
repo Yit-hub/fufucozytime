@@ -23,7 +23,7 @@ export const Home = () => {
 
   return (
     <div>
-      {/*<Carousel images={images} slideInterval={3000} />*/}
+      <Carousel images={images} slideInterval={3000} />
       <br />
       <ColorSection />
       <br />
