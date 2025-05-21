@@ -15,8 +15,8 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-2">Navegación</h4>
           <ul className="space-y-1">
-            <li><a href="#" className="hover:underline">Inicio</a></li>
-            <li><a href="#" className="hover:underline">Galería</a></li>
+            <li><a href="/inicio" className="hover:underline">Inicio</a></li>
+            <li><a href="/galeria" className="hover:underline">Galería</a></li>
             <li><a href="#" className="hover:underline">Menú</a></li>
           </ul>
         </div>

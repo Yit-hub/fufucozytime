@@ -1,4 +1,3 @@
-import { ReactNode } from "react";
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import  { Home }  from './src/Pages/Home';
 import  { Galeria }  from './src/Pages/Galeria';
