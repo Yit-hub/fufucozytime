@@ -17,10 +17,10 @@ const Header = () => {
 
         {/* Nav - Desktop */}
         <nav className="hidden md:flex absolute left-1/2 transform -translate-x-1/2">
-          <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
+          <a href="/inicio" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
             Inicio
           </a>
-          <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
+          <a href="/galeria" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
             Galería
           </a>
           <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
@@ -65,10 +65,10 @@ const Header = () => {
       {/* Nav - Mobile */}
       {menuOpen && (
         <div className="md:hidden mt-4 flex flex-col items-center space-y-2">
-          <a href="#" className="text-lg font-bold hover:text-gray-500">
+          <a href="inicio" className="text-lg font-bold hover:text-gray-500">
             Inicio
           </a>
-          <a href="#" className="text-lg font-bold hover:text-gray-500">
+          <a href="/galeria" className="text-lg font-bold hover:text-gray-500">
             Galería
           </a>
           <a href="#" className="text-lg font-bold hover:text-gray-500">
