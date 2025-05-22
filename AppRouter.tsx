@@ -1,6 +1,9 @@
 import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import { Home }  from './src/Pages/Home';
 import { Galeria }  from './src/Pages/Galeria';
+import { Menu }  from './src/Pages/Menu';
+import { Contacto }  from './src/Pages/Contacto';
+
 
 
 export const AppRouter = () => {
@@ -10,8 +13,10 @@ export const AppRouter = () => {
                 <Route path="/" element = { <Navigate to = {"/inicio"}/> } />
                 <Route path="/inicio" element = {<Home />} />
                 <Route path="/galeria" element = {<Galeria />} />
+                <Route path="/menu" element = {<Menu />} />
+                <Route path="/contacto" element = {<Contacto />} />
                 <Route path="*" element = { <Navigate to = {"/404"}/> } />
-                <Route path="/404" element = {<h1>Página no encontrada</h1>} />
+                <Route path="/404" element = {<h1 className="text-3xl font-bold text-red-500" >Página no encontrada</h1>} />
             </Routes>
         </BrowserRouter>
     )

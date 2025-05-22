@@ -23,10 +23,10 @@ const Header = () => {
           <a href="/galeria" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
             Galería
           </a>
-          <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
+          <a href="/menu" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
             Menú
           </a>
-          <a href="#" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
+          <a href="/contacto" className="px-4 py-2 text-xl font-bold hover:text-gray-500">
             Contacto
           </a>
         </nav>
@@ -71,10 +71,10 @@ const Header = () => {
           <a href="/galeria" className="text-lg font-bold hover:text-gray-500">
             Galería
           </a>
-          <a href="#" className="text-lg font-bold hover:text-gray-500">
+          <a href="/menu" className="text-lg font-bold hover:text-gray-500">
             Menú
           </a>
-          <a href="#" className="text-lg font-bold hover:text-gray-500">
+          <a href="/contacto" className="text-lg font-bold hover:text-gray-500">
             Contacto
           </a>
           <button className="mt-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
