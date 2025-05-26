@@ -1,5 +1,12 @@
-export const Contacto = () =>{
-    return(
-        <h1>Esta es la página de contacto</h1>
+import Contact from '../components/Contact'
+import Button from '../components/Button'
+
+export const Contacto = () => {
+    return (
+        <>
+            <Contact />
+            <Button text="Haz un encargo" to="/encargo" />
+            <br />
+        </>
     )
 }
