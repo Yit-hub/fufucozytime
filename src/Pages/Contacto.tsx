@@ -5,7 +5,7 @@ export const Contacto = () => {
     return (
         <>
             <Contact />
-            <Button text="Haz un encargo" to="/encargo" />
+            <Button text="Haz un encargo" to="/encargos" />
             <br />
         </>
     )
