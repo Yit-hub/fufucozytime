@@ -14,8 +14,8 @@ const orderSchema = z.object({
   agreeContact: z.literal(true, {
     errorMap: () => ({ message: "Debes aceptar que se te contacte" }),
   }),
-  isAdult: z.literal(true, {
-    errorMap: () => ({ message: "Debes confirmar que eres mayor de edad" }),
+  terms: z.literal(true, {
+    errorMap: () => ({ message: "Debes aceptar los términos y condiciones" }),
   }),
 });
 
@@ -143,20 +143,20 @@ export default function OrderForm() {
         <p className="text-red-500 text-sm">{errors.agreeContact.message}</p>
       )}
 
-      {/* Checkbox de mayoría de edad */}
+      {/* Checkbox de condiciones */}
       <div className="flex items-center">
         <input
           type="checkbox"
-          id="isAdult"
-          {...register("isAdult")}
+          id="terms"
+          {...register("terms")}
           className="h-4 w-4 text-blue-600 border-gray-300 rounded"
         />
-        <label htmlFor="isAdult" className="ml-2 text-sm text-gray-700">
-          Confirmo que soy mayor de edad *
+        <label htmlFor="terms" className="ml-2 text-sm text-gray-700">
+          Acepto los términos y condiciones *
         </label>
       </div>
-      {errors.isAdult && (
-        <p className="text-red-500 text-sm">{errors.isAdult.message}</p>
+      {errors.terms && (
+        <p className="text-red-500 text-sm">{errors.terms.message}</p>
       )}
 
       {/* Submit */}
