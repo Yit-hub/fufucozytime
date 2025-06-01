@@ -9,6 +9,10 @@
  ```bash
 bun index.ts
 ```  
-6. En frontend/ se ha de hacer "bun run dev", y se creará una localhost, el cual se tendrá que abrir en el navegador
+6. En frontend/ se ha de hacer:
+ ```bash
+bun run dev
+```  
+7. y se creará una localhost, el cual se tendrá que abrir en el navegador
 
 
