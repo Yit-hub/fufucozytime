@@ -27,9 +27,9 @@ const [email, setEmail] = useState('')
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center">
-      <img src="/logo.png" className="w-40 mb-4" />
+      <img src="../src/assets/logo1.jpg" className="w-80 mb-4" />
       <h1 className="text-3xl font-bold mb-6">Login</h1>
-      <form onSubmit={handleLogin} className="bg-gray-700 p-6 rounded-md space-y-4 w-72">
+      <form onSubmit={handleLogin} className="bg-black p-6 rounded-md space-y-4 w-72">
         <input className="w-full p-2 bg-gray-300" placeholder="Correo" value={email} onChange={(e) => setEmail(e.target.value)} />
         <input className="w-full p-2 bg-gray-300" placeholder="Contraseña" type="password" value={contraseña} onChange={(e) => setContraseña(e.target.value)} />
         <button type="submit" className="w-full bg-rose-400 text-white p-2">Iniciar Sesión</button>
