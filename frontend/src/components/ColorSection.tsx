@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const sections = [
-  { id: 1, color: "bg-red-300", image: "../src/assets/Fresa.png" },
-  { id: 2, color: "bg-yellow-500", image: "Imagen 2" },
-  { id: 3, color: "bg-green-500", image: "Imagen 3" },
-  { id: 4, color: "bg-yellow-200", image: "Imagen 4" },
+  { id: 1, color: "bg-green-300", image: "../src/assets/green-tea.png" },
+  { id: 2, color: "bg-yellow-200", image: "../src/assets/maracuya-tea.png" },
+  { id: 3, color: "bg-pink-200", image: "../src/assets/pomelo-tea.png" },
+  { id: 4, color: "bg-gray-200", image: "../src/assets/lima-tea.png" },
 ];
 
 export default function InteractiveSection() {
