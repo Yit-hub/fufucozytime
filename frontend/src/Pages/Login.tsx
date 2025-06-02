@@ -2,7 +2,7 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
-export const Empleados = () =>{
+export const Login = () =>{
 const [email, setEmail] = useState('')
   const [contraseña, setContraseña] = useState('')
   const navigate = useNavigate()
@@ -19,7 +19,7 @@ const [email, setEmail] = useState('')
 
     if (encontrado) {
       localStorage.setItem('empleado', JSON.stringify(encontrado))
-      navigate('/encargos')
+      navigate('/historial')
     } else {
       alert('Correo o contraseña incorrectos')
     }

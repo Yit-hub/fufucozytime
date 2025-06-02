@@ -15,14 +15,12 @@ export const Encargos = () => {
               cliente
             </p>
             <p>
-              Para más información de nuestros servicios lea nuestra página de 
-              política y privacidad
+              Para más información de sobre responsabilidades, términos legales, condiciones
+              del encargo o políticas de privacidad lea nuestra página de política y privacidad
             </p>
             <p>
-              More recently with desktop publishing software like Aldus
-              PageMaker including versions of Lorem Ipsum. Aquí podrías incluir
-              información sobre responsabilidades, términos legales, condiciones
-              del encargo o políticas de privacidad.
+               Nuestros servicios se enfocan en proporcionar el mejor producto a nuestros clientes
+               para más información pongase en contacto con nostros.
             </p>
             <hr className="border-gray-400" />
           </div>

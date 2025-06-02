@@ -4,7 +4,7 @@ import { Galeria }  from './src/Pages/Galeria';
 import { Menu }  from './src/Pages/Menu';
 import { Contacto }  from './src/Pages/Contacto';
 import { Encargos } from "./src/Pages/Encargos";
-import { Empleados } from "./src/Pages/Empleados"
+import { Login } from "./src/Pages/Login"
 import { Historial } from "./src/Pages/Historial"
 
 
@@ -19,7 +19,7 @@ export const AppRouter = () => {
                 <Route path="/menu" element = {<Menu />} />
                 <Route path="/contacto" element = {<Contacto />} />
                 <Route path="/encargos" element = {<Encargos />} />
-                <Route path="/empleados" element = {<Empleados />} />
+                <Route path="/empleados" element = {<Login />} />
                 <Route path="/historial" element = {<Historial />} />
                 <Route path="*" element = { <Navigate to = {"/404"}/> } />
                 <Route path="/404" element = {<h1 className="text-3xl font-bold text-red-500" >Página no encontrada</h1>} />
