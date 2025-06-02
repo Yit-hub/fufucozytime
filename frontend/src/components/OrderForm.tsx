@@ -33,10 +33,29 @@ export default function OrderForm() {
     criteriaMode: "all",
   });
 
-  const onSubmit = (data: OrderFormData) => {
-    console.log("Datos enviados:", data);
+const onSubmit = async (data: OrderFormData) => {
+  try {
+    const response = await fetch("http://localhost:3001/api/encargos", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        phone: data.phone,
+        comments: data.comments,
+      }),
+    });
+
+    if (!response.ok) throw new Error("Error al registrar encargo");
+
+    console.log("Encargo registrado:", data);
     reset();
-  };
+  } catch (error) {
+    console.error("Error al enviar el formulario:", error);
+    alert("Hubo un error al registrar el encargo.");
+  }
+};
+
 
   return (
     <form

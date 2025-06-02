@@ -1,7 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import empleadosRoutes from './routes/empleados'
-import encargosRoutes from './routes/encargos' // si tienes
+import encargosRoutes from './routes/encargos'
 
 const app = express()
 
