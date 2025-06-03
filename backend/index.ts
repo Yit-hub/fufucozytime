@@ -3,6 +3,7 @@ import cors from 'cors'
 import empleadosRoutes from './routes/empleados'
 import encargosRoutes from './routes/encargos'
 import productosRoutes from './routes/productos'
+import categoriasRoutes from './routes/categorias'
 
 
 const app = express()
@@ -18,6 +19,7 @@ app.use(express.json())
 app.use('/api/empleados', empleadosRoutes)
 app.use('/api/encargos', encargosRoutes)
 app.use('/api/productos', productosRoutes)
+app.use('/api/categorias', categoriasRoutes)
 
 
 app.listen(3001, () => {
