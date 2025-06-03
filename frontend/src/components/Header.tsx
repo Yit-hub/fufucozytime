@@ -33,7 +33,7 @@ const Header = () => {
 
         {/* Botón Pedir */}
         <div className="z-10 hidden md:block">
-          <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <button className="bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
             Pedir
           </button>
         </div>
@@ -77,7 +77,7 @@ const Header = () => {
           <a href="/contacto" className="text-lg font-bold hover:text-gray-500">
             Contacto
           </a>
-          <button className="mt-2 bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <button className="mt-2 bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
             Pedir
           </button>
         </div>

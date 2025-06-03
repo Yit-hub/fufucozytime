@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 const sections = [
-  { id: 1, color: "bg-green-300", image: "../src/assets/green-tea.png" },
-  { id: 2, color: "bg-yellow-200", image: "../src/assets/maracuya-tea.png" },
-  { id: 3, color: "bg-pink-200", image: "../src/assets/pomelo-tea.png" },
-  { id: 4, color: "bg-gray-200", image: "../src/assets/lima-tea.png" },
+  { id: 1, color: "bg-green-300", image: "../src/assets/green-tea.png", text: "Disfruta de nuestro ácido lácteo de lima", label:"ácido lácteo de lima"},
+  { id: 2, color: "bg-yellow-200", image: "../src/assets/maracuya-tea.png", text: "Saborea el ácido lácteo de maracuyá", label:"ácido lácteo de maracuya" },
+  { id: 3, color: "bg-pink-200", image: "../src/assets/pomelo-tea.png", text: "Experimenta la frescura de nuestro ácido lácteo de fresa", label:"ácido lácteo de fresa" },
+  { id: 4, color: "bg-gray-200", image: "../src/assets/lima-tea.png", text: "Siente el placer de nuestro ácido lácteo de pomelo", label:"ácido lácteo de pomelo" },
 ];
 
 export default function InteractiveSection() {
@@ -28,21 +28,24 @@ export default function InteractiveSection() {
               onClick={() => setActive(index)}
               className={`flex-1 transition-all duration-300 ${section.color
                 } hover:opacity-80 ${active === index ? "ring-4 ring-white" : ""}`}
+              aria-label={section.label}
             />
           ))}
         </div>
 
         {/* Right side (background/image display) */}
         <div
-          className={`flex-1 transition-all duration-500 flex items-center justify-center ${sections[active].color}`}
+          className={`flex-1 transition-all duration-500 flex flex-col items-center justify-center ${sections[active].color}`}
         >
           <img
             src={sections[active].image}
             alt={`Producto ${sections[active].id}`}
-            className="max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-lg"
+            className="max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-lg mb-4"
           />
+          <p className="text-white text-center text-lg font-semibold">
+            {sections[active].text}
+          </p>
         </div>
-
       </div>
     </div>
   );
