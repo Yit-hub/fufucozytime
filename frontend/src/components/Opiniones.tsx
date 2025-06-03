@@ -38,7 +38,6 @@ export default function Opiniones() {
 
   return (
     <div className="w-full overflow-hidden bg-gray-100 py-6">
-      <h2 className="text-3xl font-bold text-center mb-4">Opiniones</h2>
       <div
         ref={scrollContainer}
         className="flex overflow-x-auto space-x-4 px-4 no-scrollbar transition-all"
