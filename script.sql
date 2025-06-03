@@ -180,3 +180,10 @@ INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('Julia Qua
 INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('tony Hu', 5, 'Increíble lugar en sevilla si quieres disfrutar de un buen bubble tea y tartas de diferentes sabores', '2024-12-22 12:30:00');
 INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('Alejandra Padilla', 5, 'Es muy bonito y acogedor el lugar me gustaría ir con amigos porque es amplio y muy limpio y todos lo que estaban allí eran amables.
 ', '2025-02-22 12:30:00');
+INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('Xinyi Chen', 5, 'Vine a Sevilla de viaje y llegué hasta esta pastelería. 
+¡Su tienda es muuuy instagrameable! Me encanta su diseño y cómo está diseñado todo. 
+El personal es SUPER amable y servicial y sus pasteles, se ven y son muy sabrosos, 
+especialmente sus mochis, son muuuy buenos. También pedí un té de burbujas de camelia con tapioca, no es demasiado dulce,
+ por lo que es perfecto para mis papilas gustativas asiáticas (pero puedes decirles que agreguen más azúcar si lo deseas). 
+Recomiendo encarecidamente este lugar!!!!!! 🤩', '2025-01-15 12:30:00');
+INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('ISPANEX Global Trade', 5, 'Cafe riquísimo .... Y lugar muy agradable', '2025-05-01 12:30:00');
