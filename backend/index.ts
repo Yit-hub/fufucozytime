@@ -4,6 +4,8 @@ import empleadosRoutes from './routes/empleados'
 import encargosRoutes from './routes/encargos'
 import productosRoutes from './routes/productos'
 import categoriasRoutes from './routes/categorias'
+import opinionesRoutes from './routes/opiniones'
+
 
 
 const app = express()
@@ -20,6 +22,8 @@ app.use('/api/empleados', empleadosRoutes)
 app.use('/api/encargos', encargosRoutes)
 app.use('/api/productos', productosRoutes)
 app.use('/api/categorias', categoriasRoutes)
+app.use('/api/opiniones', opinionesRoutes)
+
 
 
 app.listen(3001, () => {

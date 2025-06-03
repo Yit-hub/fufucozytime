@@ -168,7 +168,10 @@ INSERT INTO encargos (nombre, email, telefono, descripcion, fecha, estado) VALUE
 INSERT INTO empleados (nombre, email, contraseña) VALUES ('Daniel', 'danielyi2004@gmail.com', '123456789');
 
 -- opiniones
-INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('Patricia María García Soriano', 5, 'Hemos probado estos pastelitos y por mi parte un café latte. El café estaba buenísimo y la leche se nota que es la de oatly de avena, ya que es la que estoy acostumbrada a tomar, creo que habría que mejorar la técnica de latteado ya que tenía más espuma que crema, pero estaba igualmente espectacular. Desde luego es muy buen sitio para tomar un gran café de especialidad. En cuanto a los pasteles, el de fresas me ha encantado el bizcocho era como una nube, y la tarta de Lotus algo dura para lo que estoy acostumbrada, pero muy rica de sabor, una muy buena experiencia y sin duda repetiré!
+INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('Patricia María García Soriano', 5, 'Hemos probado estos pastelitos y por mi parte un café latte. 
+El café estaba buenísimo y la leche se nota que es la de oatly de avena, ya que es la que estoy acostumbrada a tomar, creo que habría que mejorar la técnica de latteado 
+ya que tenía más espuma que crema, pero estaba igualmente espectacular. Desde luego es muy buen sitio para tomar un gran café de especialidad. En cuanto a los pasteles, 
+el de fresas me ha encantado el bizcocho era como una nube, y la tarta de Lotus algo dura para lo que estoy acostumbrada, pero muy rica de sabor, una muy buena experiencia y sin duda repetiré!
 ', '2025-02-28 10:30:00');
 INSERT INTO opiniones (nombre, estrellas, descripcion, fecha) VALUES ('Ro', 5, 'Es un sitio muy tranquilo, y amplio, el postre era delicioso, y muy suave.
 Volveré, lo recomiendo mucho.', '2025-01-29 11:30:00');
