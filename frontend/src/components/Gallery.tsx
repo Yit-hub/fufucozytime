@@ -13,7 +13,7 @@ const Gallery: React.FC<GalleryProps> = ({ images }) => {
             <img
               src={image.src}
               alt={image.alt || `Imagen ${index + 1}`}
-              className="w-full h-64 object-cover"
+              className="w-full h-auto object-cover"
               loading="lazy"
             />
           </div>
