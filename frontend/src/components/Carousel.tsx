@@ -1,83 +1,28 @@
-import React, { useState, useEffect, ReactElement } from 'react';
+import { useEffect, useState } from "react";
 
 interface CarouselProps {
   images: string[];
-  slideInterval: number;
 }
 
-const Carousel = ({ images, slideInterval }: CarouselProps): ReactElement => {
-  const [currentIndex, setCurrentIndex] = useState<number>(0);
-
-  const goToPreviousSlide = (): void => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex - 1 + images.length) % images.length
-    );
-  };
-
-  const goToNextSlide = (): void => {
-    setCurrentIndex((prevIndex) =>
-      (prevIndex + 1) % images.length
-    );
-  };
-
-  const goToSlide = (index: number): void => {
-    setCurrentIndex(index);
-  };
+export default function Carousel({ images }: CarouselProps) {
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) =>
-        (prevIndex + 1) % images.length
+        prevIndex === images.length - 1 ? 0 : prevIndex + 1
       );
-    }, slideInterval);
+    }, 20000); // 20 segundos
 
     return () => clearInterval(interval);
-  }, [slideInterval, images.length]);
+  }, [images.length]);
 
   return (
-    <div className="relative overflow-hidden w-full">
-      <div className="whitespace-nowrap overflow-x-auto snap-x">
-        <div className="inline-block snap-center">
-          <img
-            src={images[currentIndex]}
-            alt={`Slide ${currentIndex}`}
-            className="w-full h-64 object-cover"
-          />
-        </div>
-        {images.map((image, index) => (
-          // Render all slides
-          <div key={index} className="inline-block snap-center">
-            <img
-              src={image}
-              alt={`Slide ${index}`}
-              className="w-full h-64 object-cover"
-            />
-          </div>
-        ))}
-      </div>
-      <button
-        onClick={goToPreviousSlide}
-        className="absolute top-0 left-0 z-10 p-4"
-      >
-        Previous
-      </button>
-      <button
-        onClick={goToNextSlide}
-        className="absolute top-0 right-0 z-10 p-4"
-      >
-        Next
-      </button>
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center space-x-2 p-4">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            onClick={() => goToSlide(index)}
-            className={`w-4 h-4 bg-gray-300 hover:bg-gray-400 ${currentIndex === index ? 'bg-gray-400' : ''} rounded-full`}
-          ></button>
-        ))}
-      </div>
+    <div className="w-[100vw] mx-auto overflow-hidden rounded-2xl shadow-lg">
+      <div
+        className="w-full h-[60vh] bg-cover bg-center transition-all duration-1000"
+        style={{ backgroundImage: `url(${images[currentIndex]})` }}
+      />
     </div>
   );
-};
-
-export default Carousel;
+}

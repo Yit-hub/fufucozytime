@@ -8,9 +8,9 @@ import TestimonialsSlider from '../components/TestimonialsSlider'
 
 export const Home = () => {
   const images = [
-    'image1.jpg',
-    'image2.jpg',
-    'image3.jpg'
+    '../src/assets/cartel1.png',
+    '../src/assets/cartel1.png',
+    '../src/assets/cartel1.png'
   ]
   const testimonials = [
   { id: 1, name: "Ana", message: "Me encanta este lugar, el café es excelente." },
@@ -23,7 +23,7 @@ export const Home = () => {
 
   return (
     <div>
-      <Carousel images={images} slideInterval={3000} />
+      <Carousel images={images} />
       <br />
       <ColorSection />
       <br />
