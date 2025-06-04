@@ -42,7 +42,7 @@ export default function InteractiveSection() {
             alt={`Producto ${sections[active].id}`}
             className="max-w-xs md:max-w-md lg:max-w-lg object-contain drop-shadow-lg mb-4"
           />
-          <p className="text-white text-center text-lg font-semibold">
+          <p className="text-slate-800 text-center text-4xl font-bold">
             {sections[active].text}
           </p>
         </div>
