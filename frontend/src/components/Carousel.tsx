@@ -20,13 +20,14 @@ export default function Carousel({ images }: CarouselProps) {
   const currentImage = images[currentIndex];
 
   return (
-    <div className="w-[100vw] mx-auto overflow-hidden rounded-2xl shadow-lg">
+    <div className="w-full mx-auto overflow-hidden shadow-lg">
       <a
         href={currentImage.link}
+        target="_blank"
         rel="noopener noreferrer"
-        className="block w-full h-[60vh] bg-cover bg-center transition-all duration-1000 cursor-pointer"
+        className="block w-full aspect-[16/10] bg-cover bg-center transition-all duration-1000 cursor-pointer"
         style={{ backgroundImage: `url(${currentImage.url})` }}
-      ></a>
+      />
     </div>
   );
 }
