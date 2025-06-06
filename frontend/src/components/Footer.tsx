@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Columna 1 */}
         <div>
           <h4 className="font-semibold mb-2">Preguntas frecuentes</h4>
-          <a href="#" className="hover:underline block mt-1">Ver todas</a>
+          <a href="/faqs" className="hover:underline block mt-1">Ver todas</a>
         </div>
 
         {/* Columna 2 */}
@@ -17,14 +17,15 @@ const Footer = () => {
           <ul className="space-y-1">
             <li><a href="/inicio" className="hover:underline">Inicio</a></li>
             <li><a href="/galeria" className="hover:underline">Galería</a></li>
-            <li><a href="#" className="hover:underline">Menú</a></li>
+            <li><a href="/menu" className="hover:underline">Menú</a></li>
+            <li><a href="/contacto" className="hover:underline">Contacto</a></li>
           </ul>
         </div>
 
         {/* Columna 3 */}
         <div>
           <h4 className="font-semibold mb-2">Política</h4>
-          <a href="#" className="hover:underline block mt-1">Política de cookies</a>
+          <a href="/cookies" className="hover:underline block mt-1">Política de cookies</a>
         </div>
 
         {/* Columna 4 */}
