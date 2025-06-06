@@ -31,11 +31,16 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Botón Pedir */}
+        {/* Botón Pedir - Desktop */}
         <div className="z-10 hidden md:block">
-          <button className="bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <a
+            href="https://glovoapp.com/es/es/sevilla/fufu-cozy-time-sevilla/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+          >
             Pedir
-          </button>
+          </a>
         </div>
 
         {/* Botón Hamburguesa - Mobile */}
@@ -65,7 +70,7 @@ const Header = () => {
       {/* Nav - Mobile */}
       {menuOpen && (
         <div className="md:hidden mt-4 flex flex-col items-center space-y-2">
-          <a href="inicio" className="text-lg font-bold hover:text-gray-500">
+          <a href="/inicio" className="text-lg font-bold hover:text-gray-500">
             Inicio
           </a>
           <a href="/galeria" className="text-lg font-bold hover:text-gray-500">
@@ -77,9 +82,14 @@ const Header = () => {
           <a href="/contacto" className="text-lg font-bold hover:text-gray-500">
             Contacto
           </a>
-          <button className="mt-2 bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded">
+          <a
+            href="https://glovoapp.com/es/es/sevilla/fufu-cozy-time-sevilla/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 bg-red-700 hover:bg-red-700 text-white font-bold py-2 px-4 rounded cursor-pointer"
+          >
             Pedir
-          </button>
+          </a>
         </div>
       )}
     </header>
