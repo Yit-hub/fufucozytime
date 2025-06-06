@@ -31,17 +31,17 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-2">Contacto</h4>
           <div className="flex space-x-3 mt-3">
-            <a href="#" className="w-8 h-8 bg-gray-300 hover:bg-gray-400 flex items-center justify-center rounded">
-              <img src="facebook-icon.svg" alt="Facebook" className="w-4 h-4" />
+            <a href="https://www.facebook.com/?locale=es_ES" target="_blank" className="w-8 h-8 bg-white hover:bg-gray-400 flex items-center justify-center rounded">
+              <img src="../src/assets/footer/facebook.svg" alt="Facebook" className="w-8 h-8" />
             </a>
-            <a href="#" className="w-8 h-8 bg-gray-300 hover:bg-gray-400 flex items-center justify-center rounded">
-              <img src="twitter-icon.svg" alt="Twitter" className="w-4 h-4" />
+            <a href="https://x.com/home?lang=es" target="_blank" className="w-8 h-8 bg-white hover:bg-gray-400 flex items-center justify-center rounded">
+              <img src="../src/assets/footer/x.svg" alt="Twitter" className="w-8 h-8" />
             </a>
-            <a href="#" className="w-8 h-8 bg-gray-300 hover:bg-gray-400 flex items-center justify-center rounded">
-              <img src="instagram-icon.svg" alt="Instagram" className="w-4 h-4" />
+            <a href="https://www.instagram.com/fufu_cozytime/" target="_blank" className="w-8 h-8 bg-white hover:bg-gray-400 flex items-center justify-center rounded">
+              <img src="../src/assets/footer/instagram.svg" alt="Instagram" className="w-8 h-8" />
             </a>
-            <a href="#" className="w-8 h-8 bg-gray-300 hover:bg-gray-400 flex items-center justify-center rounded">
-              <img src="linkedin-icon.svg" alt="LinkedIn" className="w-4 h-4" />
+            <a href="https://www.linkedin.com/" target="_blank" className="w-8 h-8 bg-white hover:bg-gray-400 flex items-center justify-center rounded">
+              <img src="../src/assets/footer/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
             </a>
           </div>
         </div>
