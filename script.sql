@@ -1,4 +1,4 @@
--- Crear base de datos (opcional)
+
 CREATE DATABASE IF NOT EXISTS cafeteria;
 USE cafeteria;
 
@@ -48,9 +48,9 @@ CREATE TABLE opiniones (
 );
 
 
---Datos
+-- Datos
 
---categorías
+-- categorías
 INSERT INTO categorias (nombre) VALUES ('Fresh Milk Tea');
 INSERT INTO categorias (nombre) VALUES ('Milk Tea');
 INSERT INTO categorias (nombre) VALUES ('Ácido Lácteo');
@@ -63,8 +63,8 @@ INSERT INTO categorias (nombre) VALUES ('Cafés');
 
 
 
---productos
---Fresh Milk Tea
+-- productos
+-- Fresh Milk Tea
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de jazmín', 'Milk tea con aroma a jazmín', 6.50, 5.50, 1);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de Oolong', 'Milk tea de Oolong con toques de melocotón', 6.50, 5.50, 1);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de camelia', 'Milk tea con aroma a camelia', 6.50, 5.50, 1);
@@ -73,7 +73,7 @@ INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALU
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de jazmín con matcha', 'Milk tea con aroma a jazmín con matcha', 6.50, 5.50, 1);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de jazmín con menta', 'Milk tea con aroma a jazmín con menta', 6.50, 5.50, 1);
 
---milk Tea
+-- milk Tea
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea con tapioca', 'Milk tea con tapioca original', 5.50, 4.50, 2);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea con azuki', 'Milk tea con legumbres azuki', 5.50, 4.50, 2);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea con jelly coco', 'Milk tea con birutas de jelly coco', 5.50, 4.50, 2);
@@ -86,7 +86,7 @@ INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Milk 
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de oreo', 'Milk tea de galletas oreo', 5.50, 4.50, 2);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Milk tea de lotus', 'Milk tea de galletas lotus', 5.50, 4.50, 2);
 
---Ácido lácteo
+-- Ácido lácteo
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Ácido lácteo mango', 'Ácido lácteo con sabor a mango', 5.50, 4.50, 3);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Ácido lácteo fresa', 'Ácido lácteo con sabor a fresa', 5.50, 4.50, 3);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Ácido lácteo maracuyá', 'Ácido lácteo con sabor a maracuyá', 5.50, 4.50, 3);
@@ -97,14 +97,14 @@ INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALU
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Ácido lácteo melocotón', 'Ácido lácteo con sabor a melocotón', 5.50, 4.50, 3);
 INSERT INTO productos (nombre, descripcion, precio, precio_M, categoria_id) VALUES ('Ácido lácteo limón', 'Ácido lácteo con sabor a limón', 5.50, 4.50, 3);
 
---Beat lemon tea
+-- Beat lemon tea
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té verde con lima', 'Té verde con sabor a lima', 5, 4);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té Yashixiang con lima', 'Té Yashixiang con lima', 5, 4);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té con toque melocotón y lima', 'Té con toque melocotón y lima', 5, 4);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té camelia con lima', 'Té camelia con lima', 5, 4);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té Dahongpao con lima', 'Té Dahongpao con lima', 5, 4);
 
---Crema de queso
+-- Crema de queso
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Smoothie de uva', 'Smoothie de sabor a uva', 6, 5);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Smoothie de fresa', 'Smoothie de sabor a fresa', 6, 5);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Smoothie de lichi', 'Smoothie de sabor a fruta lichi', 6, 5);
@@ -112,7 +112,7 @@ INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Smoot
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Smoothie de piña', 'Smoothie de sabor a piña', 6, 5);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Smoothie de melocotón', 'Smoothie de sabor a melocotón', 6, 5);
 
---Frappé
+-- Frappé
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Frapé de matcha', 'Frapé de sabor a matcha', 6, 6);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Frapé de mango', 'Frapé de sabor a mango', 6, 6);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Frapé de chocolate', 'Frapé de sabor a chocolate', 6, 6);
@@ -122,7 +122,7 @@ INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Frap�
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Frapé de lotus', 'Frapé de sabor a lotus', 6, 6);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Frapé de taro', 'Frapé de sabor a taro', 6, 6);
 
---Té con fruta
+-- Té con fruta
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té verde con maracuyá', 'Té verde con maracuyá y toppings de tapioca y jelly de coco', 5.5, 7);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té verde con maracuyá y mango', 'Té verde con maracuyá y mango', 5.5, 7);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té verde con maracuyá y piña', 'Té verde con maracuyá y piña', 6, 7);
@@ -141,7 +141,7 @@ INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té v
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té verde con melocotón y pomelo', 'Té verde con melocotón y pomelo', 6, 7);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Té verde con arándano y uva', 'Té verde con arándano y uva', 6, 7);
 
---Cafés
+-- Cafés
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Café solo', 'café solo puro', 1.6, 8);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Café con leche', 'café con leche', 1.8, 8);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Café con leche de avena', 'café con leche de avena', 2, 8);
@@ -159,7 +159,7 @@ INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Latte
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Café con leche de coco y matcha', 'Café con leche de coco y matcha', 4.5, 8);
 INSERT INTO productos (nombre, descripcion, precio, categoria_id) VALUES ('Americano de piña', 'Café americano de piña', 4, 8);
 
---encargos
+-- encargos
 INSERT INTO encargos (nombre, email, telefono, descripcion, fecha) VALUES ('John Doe', 'john.doe@example.com', '123456789', 'Tarta de queso', '2025-05-29 10:00:00');
 INSERT INTO encargos (nombre, email, telefono, descripcion, fecha, estado) VALUES ('Jane Smith', 'jane.smith@example.com', '987654321', 'Tarta de chocolate', '2025-05-29 11:00:00', 'hecho');
 INSERT INTO encargos (nombre, email, telefono, descripcion, fecha, estado) VALUES ('Alice Johnson', 'alice.johnson@example.com', '112233445', 'café', '2025-05-29 12:00:00', 'rechazado');
