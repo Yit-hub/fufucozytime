@@ -101,9 +101,9 @@ export default function Carta() {
               ×
             </button>
             <img
-              src={productoSeleccionado.imagen || "/images/default.jpg"}
+              src={productoSeleccionado.imagen || "../src/assets/Bubble-tea.jpg"}
               alt={productoSeleccionado.nombre}
-              className="rounded-xl w-full h-48 object-cover mb-4"
+              className="rounded-xl w-50 object-cover mb-4"
             />
             <h3 className="text-2xl font-bold">
               {productoSeleccionado.nombre}
