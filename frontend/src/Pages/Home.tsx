@@ -2,16 +2,14 @@
 import Carousel from '../components/Carousel'
 import ColorSection from '../components/ColorSection'
 import CookieBanner from '../components/CookieBanner'
-import TestimonialsSlider from '../components/TestimonialsSlider'
 import Opiniones from '../components/Opiniones'
+import cartel1 from '../assets/cartel1.png';
 
 
 
 export const Home = () => {
   const images = [
-    '../src/assets/cartel1.png',
-    '../src/assets/cartel1.png',
-    '../src/assets/cartel1.png'
+    { url: "../src/assets/cartel1.png", link: "/encargos" }
   ]
 
   return (
