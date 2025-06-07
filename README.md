@@ -9,7 +9,7 @@
  ```bash
 bun index.ts
 ```
-[!NOTE]
+.[!NOTE]
 En el backend está agregado el archivo .env el cual contiene los datos de usuario, contraseña y nombre de la base de datos, en caso de tener otra configucarión cambiar estos datos
 
 6. En frontend/ se ha de hacer:
