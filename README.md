@@ -12,6 +12,8 @@ bun index.ts
 > [!NOTE]  
 > En el backend está agregado el archivo .env el cual contiene los datos de usuario, contraseña y nombre de la base de datos, en caso de tener otra configucarión cambiar estos datos
 
+![image](https://github.com/user-attachments/assets/64026d4c-507c-4160-b278-7a23f3cf5b8a)
+
 6. En frontend/ se ha de hacer:
  ```bash
 bun run dev
